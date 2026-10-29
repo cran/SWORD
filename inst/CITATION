@@ -1,0 +1,11 @@
+bibentry(
+  "Article",
+  title   = "Oblique Random Forests for Regression via Weighted Support Vector Machine",
+  author  = c(person("Andrea", "Carta"), person("Luca", "Frigau")),
+  journal = "Advances in Data Analysis and Classification",
+  year    = "in press",
+  note    = "Accepted, in press",
+  textVersion = paste("Carta A, Frigau L (accepted, in press).",
+    "Oblique Random Forests for Regression via Weighted Support Vector Machine.",
+    "Advances in Data Analysis and Classification.")
+)

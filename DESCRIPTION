@@ -1,0 +1,46 @@
+Package: SWORD
+Type: Package
+Title: Support Vector Machine Weighted Oblique Random Decision Forests
+Version: 0.1.0
+Authors@R: c(
+    person("Andrea", "Carta", role = c("aut", "cre"), email = "andrea.carta88@unica.it",
+           comment = c(ORCID = "0000-0003-4077-1822")),
+    person("Luca", "Frigau", role = "aut"))
+Description: Implements SWORD (Support vector machine Weighted Oblique Random
+    Decision forests), a random forest method for regression based on TORS
+    (Tree Oblique for Regression with weighted SVM) oblique regression trees. At each internal node a
+    Weighted-SVM classifier with a linear kernel defines the oblique splitting
+    hyperplane as a sparse linear combination of predictors. The C++
+    coordinate-descent solver provides fast training. Variable importance is
+    computed via OIW-VI (Oblique Impurity-Weighted Variable Importance).
+    Provides tree fitting (TORS), forest fitting (SWORD), prediction, and
+    variable importance (VI_SWORD). Parallel tree fitting is supported via the
+    'future'/'furrr' framework.
+    The SWORD method is described in Carta and Frigau (accepted, in press)
+    'Oblique Random Forests for Regression via Weighted Support Vector Machine',
+    Advances in Data Analysis and Classification.
+    The TORS algorithm is described in Carta and Frigau (2025)
+    <doi:10.1007/s00180-025-01647-w>. The weighted SVM is based on
+    Yang, Song and Cao (2005) <doi:10.1109/IJCNN.2005.1555965> and the
+    'WeightSVM' package by Xu et al. (2024)
+    <doi:10.32614/CRAN.package.WeightSVM>.
+License: GPL-3
+URL: https://github.com/acarta88/sword-package
+BugReports: https://github.com/acarta88/sword-package/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+Suggests: infotheo, furrr, progressr, future, visNetwork,
+        microbenchmark, knitr, rmarkdown, ggplot2, MASS, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-10-19 09:02:03 UTC; acart
+Author: Andrea Carta [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-4077-1822>),
+  Luca Frigau [aut]
+Maintainer: Andrea Carta <andrea.carta88@unica.it>
+Repository: CRAN
+Date/Publication: 2026-10-29 10:40:02 UTC
